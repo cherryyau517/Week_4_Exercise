@@ -27,3 +27,39 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+anthony_total=0
+for add_amt in blockchain
+  anthony_total += add_amt[:amount] if add_amt [:to_user] == "anthony"
+end
+for red_amt in blockchain
+  anthony_total -= red_amt[:amount] if red_amt [:from_user] == "anthony"
+end
+
+ben_total=0
+for add_amt in blockchain
+  ben_total += add_amt[:amount] if add_amt [:to_user] == "ben"
+end
+for red_amt in blockchain
+  ben_total -= red_amt[:amount] if red_amt [:from_user] == "ben"
+end
+
+brian_total=0
+for add_amt in blockchain
+  brian_total += add_amt[:amount] if add_amt [:to_user] == "brian"
+end
+for red_amt in blockchain
+  brian_total -= red_amt[:amount] if red_amt [:from_user] == "brian"
+end
+
+evan_total=0
+for add_amt in blockchain
+  evan_total += add_amt[:amount] if add_amt [:to_user] == "evan"
+end
+for red_amt in blockchain
+  evan_total -= red_amt[:amount] if red_amt [:from_user] == "evan"
+end
+
+puts "Ben's KelloggCoin balance is " + "#{ben_total}"
+puts "Brian's KelloggCoin balance is " + "#{brian_total}"
+puts "Evan's KelloggCoin balance is " + "#{evan_total}"
+puts "Anthony's KelloggCoin balance is " + "#{anthony_total}"
